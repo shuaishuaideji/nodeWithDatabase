@@ -1,0 +1,10 @@
+
+
+
+/*用到的一些全局变量(windows.xxxx)在这里先申明,防止出错,以及防止冲突
+*/
+
+PubSub//发广播的三方函数
+isLogin//是否登陆
+uid
+login_token

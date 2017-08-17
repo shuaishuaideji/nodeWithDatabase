@@ -1,0 +1,21 @@
+.signIn-contain {
+  margin-top: 200px;
+  .signIn-text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  input {
+    display: block;
+    margin: 20px auto;
+    height: 30px;
+    width: 300px;
+  }
+
+  button {
+    display: block;
+    margin: 20px auto;
+    width: 100px;
+  }
+}
