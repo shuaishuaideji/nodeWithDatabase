@@ -54,7 +54,7 @@ module.exports = {
                 test: /\.(otf|eot|svg|ttf|woff|woff2).*$/,
                 loader: 'url?limit=10000'
             },
-            {test: /\.json$/, loader: 'json'},
+            {test: /\.json$/, loader: 'json-loader'},
             {
                 test: /\.(gif|jpe?g|png|ico)$/,
                 loader: 'url?limit=10000&name=images/[hash:8].[name].[ext]'

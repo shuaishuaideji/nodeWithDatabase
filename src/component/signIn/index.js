@@ -2,8 +2,10 @@
  * Created by mac on 17/2/28.
  */
 import React, {Component} from "react";
-import {hashHistory} from 'react-router'
+import {browserHistory} from 'react-router'
 import './index.scss'
+
+import Request from '../../helpers/api/Request'
 export default class SignIn extends Component {
 	constructor(props) {
 		super(props);
@@ -25,7 +27,15 @@ export default class SignIn extends Component {
 
 
 	loginHandle = () => {
-		console.log('12312312332');
+		Request.post('/login',{
+			account: this.state.account,
+			password: this.state.password,
+		}).then((res) => {
+			window.userInfo =  res.data;
+			window.token = res.data.token;
+			browserHistory.push('/sendPost');
+		})
+
 	};
 
 	render() {

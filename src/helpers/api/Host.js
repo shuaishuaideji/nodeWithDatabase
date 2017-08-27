@@ -4,6 +4,6 @@
 
 const host = {}
 
-host.hostPath = 'http://localhost:10086';
+host.hostPath = 'http://localhost:10000';
 
 export  default  host;
